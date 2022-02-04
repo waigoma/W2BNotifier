@@ -13,7 +13,7 @@ class ResourceExporter {
      * jar内ファイルを書き出す
      */
     fun export(){
-        val dirPath = System.getProperty("user.dir") + File.separator + "W2BNotifier"
+        val dirPath = System.getProperty("user.dir") + File.separator + "W2BNotifierData"
         val file = File(dirPath)
 
         try {

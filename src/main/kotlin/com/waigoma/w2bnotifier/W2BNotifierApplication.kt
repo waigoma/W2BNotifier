@@ -9,6 +9,7 @@ class W2BNotifierApplication
 
 fun main(args: Array<String>) {
     runApplication<W2BNotifierApplication>(*args)
+    startup()
 }
 
 private fun startup() {
