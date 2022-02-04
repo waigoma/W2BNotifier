@@ -5,7 +5,11 @@ import com.waigoma.w2bnotifier.file.YamlManager
 
 class Main {
     companion object {
-        lateinit var yamlManager: YamlManager
+        private lateinit var yamlManager: YamlManager
+
+        fun getYamlManager(): YamlManager {
+            return yamlManager
+        }
     }
 
     init {
