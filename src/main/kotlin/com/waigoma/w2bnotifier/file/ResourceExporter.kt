@@ -7,13 +7,15 @@ import java.io.IOException
 import java.util.jar.JarFile
 
 class ResourceExporter {
+    companion object {
+        val dirPath = System.getProperty("user.dir") + File.separator + "W2BNotifierData"
+    }
     private val logger = org.slf4j.LoggerFactory.getLogger(ResourceExporter::class.java)
 
     /**
      * jar内ファイルを書き出す
      */
     fun export(){
-        val dirPath = System.getProperty("user.dir") + File.separator + "W2BNotifierData"
         val file = File(dirPath)
 
         try {
