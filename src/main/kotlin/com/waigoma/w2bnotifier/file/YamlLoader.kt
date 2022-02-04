@@ -2,17 +2,22 @@ package com.waigoma.w2bnotifier.file
 
 import org.yaml.snakeyaml.Yaml
 import java.io.File
-import java.io.InputStreamReader
+import java.io.InputStream
 
 class YamlLoader {
-    fun load(file: String): Map<String, BotYamlTemplate> {
-        val reader = InputStreamReader(File(file).inputStream())
+    fun load(path: String): Map<String, BotYamlTemplate> {
+        val inputStream: InputStream = File(path).inputStream()
 
         val yaml = Yaml()
-        val valueMap = yaml.load<HashMap<String, String>>(reader)
+        val data = yaml.load<Map<String, Any>>(inputStream)
 
         val botYamlMap = HashMap<String, BotYamlTemplate>()
-        botYamlMap["discord"] = BotYamlTemplate(valueMap["discord-token"]!!, valueMap["discord-room"]!!)
+
+        val discordToken = data["discord-token"]!!.toString()
+        val discordChannelStr = data["discord-channel"]!!.toString()
+        val discordChannel = discordChannelStr.toLong()
+
+        botYamlMap["discord"] = BotYamlTemplate(discordToken, discordChannel)
 
         return botYamlMap
     }
