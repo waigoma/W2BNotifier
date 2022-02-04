@@ -8,7 +8,7 @@ import java.util.jar.JarFile
 
 class ResourceExporter {
     companion object {
-        val dirPath = System.getProperty("user.dir") + File.separator + "W2BNotifierData"
+        val DIR_PATH = System.getProperty("user.dir") + File.separator + "W2BNotifierData"
     }
     private val logger = org.slf4j.LoggerFactory.getLogger(ResourceExporter::class.java)
 
@@ -16,7 +16,7 @@ class ResourceExporter {
      * jar内ファイルを書き出す
      */
     fun export(){
-        val file = File(dirPath)
+        val file = File(DIR_PATH)
 
         try {
             if (!file.exists()) {
