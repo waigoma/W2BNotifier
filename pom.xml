@@ -99,13 +99,13 @@
             <version>5.0.0-alpha.5</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.jagrosh/jda-utilities -->
-        <dependency>
-            <groupId>com.jagrosh</groupId>
-            <artifactId>jda-utilities</artifactId>
-            <version>3.0.5</version>
-            <scope>compile</scope>
-            <type>pom</type>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.jagrosh</groupId>-->
+<!--            <artifactId>jda-utilities</artifactId>-->
+<!--            <version>3.0.5</version>-->
+<!--            <scope>compile</scope>-->
+<!--            <type>pom</type>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
