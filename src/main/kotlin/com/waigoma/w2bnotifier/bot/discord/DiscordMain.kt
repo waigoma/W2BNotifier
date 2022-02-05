@@ -23,7 +23,7 @@ class DiscordMain : ListenerAdapter() {
         logger.info("Discord bot is ready!")
     }
 
-    fun sendMessage(text: String, channelId: Long) {
-        jda.getTextChannelById(channelId)?.sendMessage(text)!!.queue()
+    fun sendMessage(text: String) {
+        jda.getTextChannelById(yml.getDiscordData().CHANNEL.toLong())?.sendMessage(text)!!.queue()
     }
 }
