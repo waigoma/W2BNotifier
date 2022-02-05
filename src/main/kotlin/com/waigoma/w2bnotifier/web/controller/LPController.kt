@@ -17,7 +17,7 @@ class LPController {
     @PostMapping("/")
     fun post(@RequestParam("discord_msg") discordMsg: String): String {
         if (discordMsg.isNotEmpty()) {
-            DiscordSender(Main.getDiscordMain().getJDA()).sendText(discordMsg, Main.getYamlManager().getDiscordData().CHANNEL)
+            DiscordSender(Main.getDiscordMain().getJDA()).sendText(discordMsg, Main.getYamlManager().getDiscordData().CHANNEL.toLong())
         }
         return "index"
     }
