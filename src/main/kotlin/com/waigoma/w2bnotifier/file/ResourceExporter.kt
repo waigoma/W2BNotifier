@@ -28,7 +28,7 @@ class ResourceExporter {
                 logger.info("Done.")
             }
         } catch (e: IOException){
-            logger.error(e.message)
+            logger.error("Exception occurred at export section", e)
         }
     }
 
