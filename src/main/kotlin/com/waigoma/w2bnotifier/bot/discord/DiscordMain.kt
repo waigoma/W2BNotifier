@@ -25,5 +25,6 @@ class DiscordMain : ListenerAdapter() {
 
     fun sendMessage(text: String) {
         jda.getTextChannelById(yml.getDiscordData().CHANNEL.toLong())?.sendMessage(text)!!.queue()
+        logger.info("Message sent to Discord")
     }
 }
