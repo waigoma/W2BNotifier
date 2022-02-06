@@ -19,8 +19,11 @@ class YamlLoader {
         val slackToken = data["slack-token"]!!.toString()
         val slackChannelStr = data["slack-channel"]!!.toString()
 
+        val lineToken = data["line-token"]!!.toString()
+
         botYamlMap["discord"] = BotYamlTemplate(discordToken, discordChannel)
         botYamlMap["slack"] = BotYamlTemplate(slackToken, slackChannelStr)
+        botYamlMap["line"] = BotYamlTemplate(lineToken, "none")
 
         return botYamlMap
     }
