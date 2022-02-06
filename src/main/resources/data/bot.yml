@@ -1,4 +1,4 @@
 discord-token: "YOUR_DISCORD_TOKEN"
-discord-channel: YOUR_DISCORD_CHANNEL_ID
+discord-channel: "YOUR_DISCORD_CHANNEL_ID"
 slack-token: "YOUR_SLACK_TOKEN"
-slack-channel: "YOUR_SLACK_CHANNEL_NAME"
+slack-channel: "YOUR_SLACK_CHANNEL_ID"
