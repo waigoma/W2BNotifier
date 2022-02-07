@@ -7,7 +7,7 @@ import net.dv8tion.jda.api.events.ReadyEvent
 import net.dv8tion.jda.api.hooks.ListenerAdapter
 
 class DiscordMain : ListenerAdapter() {
-    private val logger = org.slf4j.LoggerFactory.getLogger(DiscordMain::class.java)
+    private val logger = org.slf4j.LoggerFactory.getLogger(this::class.java)
 
     private val jda: JDA
     private val yml = Main.getYamlManager()
