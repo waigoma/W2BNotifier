@@ -15,12 +15,16 @@ class LPController {
 
     @PostMapping("/")
     fun post(@RequestParam("discord_msg") discordMsg: String,
-             @RequestParam("slack_msg") slackMsg: String): String {
+             @RequestParam("slack_msg") slackMsg: String,
+             @RequestParam("line_msg") lineMsg: String): String {
         if (discordMsg.isNotEmpty()) {
             Main.getDiscordMain().sendMessage(discordMsg)
         }
         if (slackMsg.isNotEmpty()) {
             Main.getSlackMain().sendMessage(slackMsg)
+        }
+        if (lineMsg.isNotEmpty()) {
+            Main.getLineMain().sendMessage(lineMsg)
         }
         return "index"
     }
