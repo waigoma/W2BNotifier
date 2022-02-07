@@ -118,12 +118,6 @@
             <artifactId>line-bot-api-client</artifactId>
             <version>4.7.0</version>
         </dependency>
-        <!-- https://search.maven.org/artifact/com.linecorp.bot/line-bot-spring-boot/4.7.0/jar  -->
-        <dependency>
-            <groupId>com.linecorp.bot</groupId>
-            <artifactId>line-bot-spring-boot</artifactId>
-            <version>4.7.0</version>
-        </dependency>
     </dependencies>
 
     <build>
