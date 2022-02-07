@@ -106,12 +106,23 @@
 <!--            <scope>compile</scope>-->
 <!--            <type>pom</type>-->
 <!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/com.ullink.slack/simpleslackapi -->
         <!-- https://mvnrepository.com/artifact/com.slack.api/slack-api-client -->
         <dependency>
             <groupId>com.slack.api</groupId>
             <artifactId>slack-api-client</artifactId>
             <version>1.18.0</version>
+        </dependency>
+        <!-- https://search.maven.org/artifact/com.linecorp.bot/line-bot-api-client/4.7.0/jar -->
+        <dependency>
+            <groupId>com.linecorp.bot</groupId>
+            <artifactId>line-bot-api-client</artifactId>
+            <version>4.7.0</version>
+        </dependency>
+        <!-- https://search.maven.org/artifact/com.linecorp.bot/line-bot-spring-boot/4.7.0/jar  -->
+        <dependency>
+            <groupId>com.linecorp.bot</groupId>
+            <artifactId>line-bot-spring-boot</artifactId>
+            <version>4.7.0</version>
         </dependency>
     </dependencies>
 
