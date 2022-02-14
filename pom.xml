@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.waigoma</groupId>
     <artifactId>W2BNotifier</artifactId>
-    <version>0.1.0</version>
+    <version>1.0.0</version>
     <name>W2BNotifier</name>
     <description>W2BNotifier</description>
     <properties>
